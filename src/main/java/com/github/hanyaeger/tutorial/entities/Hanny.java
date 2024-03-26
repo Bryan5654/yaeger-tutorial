@@ -9,7 +9,7 @@ import com.github.hanyaeger.api.entities.SceneBorderTouchingWatcher;
 import com.github.hanyaeger.api.entities.impl.DynamicSpriteEntity;
 import com.github.hanyaeger.api.scenes.SceneBorder;
 import com.github.hanyaeger.api.userinput.KeyListener;
-import com.github.hanyaeger.tutorial.Waterworld;
+import com.github.hanyaeger.tutorial.TheLastOfBryan;
 import com.github.hanyaeger.tutorial.entities.text.HealthText;
 import javafx.scene.input.KeyCode;
 
@@ -17,12 +17,12 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-public class Hanny extends DynamicSpriteEntity implements KeyListener, SceneBorderTouchingWatcher, Newtonian, Collided {
+public class Hanny extends DynamicSpriteEntity implements KeyListener, SceneBorderTouchingWatcher, Newtonian, Collided, Collider {
 
     private HealthText healthText;
-    private Waterworld waterworld;
+    private TheLastOfBryan waterworld;
     private int health = 10;
-    public Hanny(Coordinate2D location, HealthText healthText, Waterworld waterworld) {
+    public Hanny(Coordinate2D location, HealthText healthText, TheLastOfBryan waterworld) {
         super("sprites/hanny.png", location, new Size(20, 40), 1, 2);
 
         this.waterworld = waterworld;

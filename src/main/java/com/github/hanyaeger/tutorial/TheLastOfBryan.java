@@ -6,14 +6,14 @@ import com.github.hanyaeger.tutorial.scenes.GameLevel;
 import com.github.hanyaeger.tutorial.scenes.GameOver;
 import com.github.hanyaeger.tutorial.scenes.TitleScene;
 
-public class Waterworld extends YaegerGame {
+public class TheLastOfBryan extends YaegerGame {
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void setupGame() {
-        setGameTitle("Waterworld");
+        setGameTitle("The Last Of Bryan");
         setSize(new Size(800, 600));
     }
 

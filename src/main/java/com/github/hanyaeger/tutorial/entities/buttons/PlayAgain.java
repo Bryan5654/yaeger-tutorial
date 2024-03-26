@@ -6,7 +6,7 @@ import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.userinput.MouseButtonPressedListener;
 import com.github.hanyaeger.api.userinput.MouseEnterListener;
 import com.github.hanyaeger.api.userinput.MouseExitListener;
-import com.github.hanyaeger.tutorial.Waterworld;
+import com.github.hanyaeger.tutorial.TheLastOfBryan;
 import javafx.scene.Cursor;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
@@ -14,9 +14,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 public class PlayAgain extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
-    Waterworld waterworld;
+    TheLastOfBryan waterworld;
 
-    public PlayAgain(Coordinate2D initialLocation, Waterworld waterworld) {
+    public PlayAgain(Coordinate2D initialLocation, TheLastOfBryan waterworld) {
         super(initialLocation, "Play again");
         this.waterworld = waterworld;
         setAnchorPoint(AnchorPoint.CENTER_CENTER);

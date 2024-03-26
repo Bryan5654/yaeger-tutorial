@@ -2,12 +2,11 @@ package com.github.hanyaeger.tutorial.entities.buttons;
 
 import com.github.hanyaeger.api.AnchorPoint;
 import com.github.hanyaeger.api.Coordinate2D;
-import com.github.hanyaeger.api.YaegerGame;
 import com.github.hanyaeger.api.entities.impl.TextEntity;
 import com.github.hanyaeger.api.userinput.MouseButtonPressedListener;
 import com.github.hanyaeger.api.userinput.MouseEnterListener;
 import com.github.hanyaeger.api.userinput.MouseExitListener;
-import com.github.hanyaeger.tutorial.Waterworld;
+import com.github.hanyaeger.tutorial.TheLastOfBryan;
 import javafx.scene.Cursor;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
@@ -15,9 +14,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 public class Quit extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
-    Waterworld waterworld;
+    TheLastOfBryan waterworld;
 
-    public Quit(Coordinate2D initialLocation, Waterworld waterworld) {
+    public Quit(Coordinate2D initialLocation, TheLastOfBryan waterworld) {
         super(initialLocation, "Quit");
 
         this.waterworld = waterworld;
