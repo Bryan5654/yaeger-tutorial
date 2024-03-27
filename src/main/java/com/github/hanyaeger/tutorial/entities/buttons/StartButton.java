@@ -14,32 +14,32 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 public class StartButton extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
-    private TheLastOfBryan waterworld;
+    private TheLastOfBryan thelastofbryan;
 
-    public StartButton(Coordinate2D initialLocation, TheLastOfBryan waterworld) {
+    public StartButton(Coordinate2D initialLocation, TheLastOfBryan thelastofbryan) {
         super(initialLocation, "Play game");
-        this.waterworld = waterworld;
+        this.thelastofbryan = thelastofbryan;
         setAnchorPoint(AnchorPoint.CENTER_CENTER);
-        setFill(Color.PURPLE);
-        setFont(Font.font("Roboto", FontWeight.BOLD, 30));
+        setFill(Color.BLACK);
+        setFont(Font.font("Press Gothic by Canada Type.", FontWeight.BOLD, 30));
         setStrokeWidth(0.5);
-        setStrokeColor(Color.BLACK);
+        setStrokeColor(Color.WHITE);
     }
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
-        waterworld.setActiveScene(1);
+        thelastofbryan.setActiveScene(1);
     }
 
     @Override
     public void onMouseEntered() {
-        setFill(Color.VIOLET);
+        setFill(Color.WHITE);
         setCursor(Cursor.HAND);
     }
 
     @Override
     public void onMouseExited() {
-        setFill(Color.PURPLE);
+        setFill(Color.BLACK);
         setCursor(Cursor.DEFAULT);
     }
 }

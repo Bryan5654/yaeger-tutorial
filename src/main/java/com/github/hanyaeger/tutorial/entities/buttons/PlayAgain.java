@@ -14,14 +14,14 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 public class PlayAgain extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
-    TheLastOfBryan waterworld;
+    TheLastOfBryan thelastofbryan;
 
-    public PlayAgain(Coordinate2D initialLocation, TheLastOfBryan waterworld) {
+    public PlayAgain(Coordinate2D initialLocation, TheLastOfBryan thelastofbryan) {
         super(initialLocation, "Play again");
-        this.waterworld = waterworld;
+        this.thelastofbryan = thelastofbryan;
         setAnchorPoint(AnchorPoint.CENTER_CENTER);
-        setFill(Color.PURPLE);
-        setFont(Font.font("Roboto", FontWeight.BOLD, 30));
+        setFill(Color.WHITE);
+        setFont(Font.font("Press Gothic by Canada Type", FontWeight.BOLD, 30));
         setStrokeWidth(0.5);
         setStrokeColor(Color.BLACK);
         setAnchorPoint(AnchorPoint.CENTER_CENTER);
@@ -29,18 +29,18 @@ public class PlayAgain extends TextEntity implements MouseButtonPressedListener,
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
-        waterworld.setActiveScene(1);
+        thelastofbryan.setActiveScene(1);
     }
 
     @Override
     public void onMouseEntered() {
-        setFill(Color.VIOLET);
+        setFill(Color.GREY);
         setCursor(Cursor.HAND);
     }
 
     @Override
     public void onMouseExited() {
-        setFill(Color.PURPLE);
+        setFill(Color.WHITE);
         setCursor(Cursor.DEFAULT);
     }
 }

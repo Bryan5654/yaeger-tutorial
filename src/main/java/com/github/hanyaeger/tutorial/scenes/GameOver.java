@@ -12,15 +12,15 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 public class GameOver extends StaticScene {
-    private TheLastOfBryan waterworld;
+    private TheLastOfBryan thelastofbryan;
 
-    public GameOver(TheLastOfBryan waterworld) {
-        this.waterworld = waterworld;
+    public GameOver(TheLastOfBryan thelastofbryan) {
+        this.thelastofbryan = thelastofbryan;
     }
 
     @Override
     public void setupScene() {
-        setBackgroundAudio("audio/ocean.mp3");
+        setBackgroundAudio("audio/TheLastOfBryan2.mp3");
         setBackgroundImage("backgrounds/background1.jpg");
     }
 
@@ -32,11 +32,11 @@ public class GameOver extends StaticScene {
         );
         gameOverText.setAnchorPoint(AnchorPoint.CENTER_CENTER);
         gameOverText.setFill(Color.RED);
-        gameOverText.setFont(Font.font("Roboto", FontWeight.SEMI_BOLD, 80));
+        gameOverText.setFont(Font.font("Press Gothic by Canada Type.", FontWeight.SEMI_BOLD, 70));
         gameOverText.setStrokeColor(Color.BLACK);
         gameOverText.setStrokeWidth(0.5);
         addEntity(gameOverText);
-        addEntity(new PlayAgain(new Coordinate2D(getWidth() / 2, getHeight() / 2 + 100), waterworld));
-        addEntity(new Quit(new Coordinate2D(getWidth() - 20, getHeight()), waterworld));
+        addEntity(new PlayAgain(new Coordinate2D(getWidth() / 2, getHeight() / 2 + 100), thelastofbryan));
+        addEntity(new Quit(new Coordinate2D(getWidth() - 20, getHeight()), thelastofbryan));
     }
 }

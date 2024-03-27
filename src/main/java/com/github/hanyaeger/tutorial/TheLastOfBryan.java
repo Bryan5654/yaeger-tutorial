@@ -14,7 +14,7 @@ public class TheLastOfBryan extends YaegerGame {
     @Override
     public void setupGame() {
         setGameTitle("The Last Of Bryan");
-        setSize(new Size(800, 600));
+        setSize(new Size(800, 450));
     }
 
     @Override

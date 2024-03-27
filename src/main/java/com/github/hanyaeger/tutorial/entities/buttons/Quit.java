@@ -14,33 +14,33 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
 public class Quit extends TextEntity implements MouseButtonPressedListener, MouseEnterListener, MouseExitListener {
-    TheLastOfBryan waterworld;
+    TheLastOfBryan thelastofbryan;
 
-    public Quit(Coordinate2D initialLocation, TheLastOfBryan waterworld) {
+    public Quit(Coordinate2D initialLocation, TheLastOfBryan thelastofbryan) {
         super(initialLocation, "Quit");
 
-        this.waterworld = waterworld;
+        this.thelastofbryan = thelastofbryan;
         setAnchorPoint(AnchorPoint.BOTTOM_RIGHT);
         setFill(Color.RED);
-        setFont(Font.font("Roboto", FontWeight.BOLD, 20));
+        setFont(Font.font("Press Gothic by Canada Type", FontWeight.BOLD, 20));
         setStrokeWidth(0.5);
         setStrokeColor(Color.BLACK);
     }
 
     @Override
     public void onMouseButtonPressed(MouseButton mouseButton, Coordinate2D coordinate2D) {
-        waterworld.quit();
+        thelastofbryan.quit();
     }
 
     @Override
     public void onMouseEntered() {
-        setFill(Color.VIOLET);
+        setFill(Color.WHITE);
         setCursor(Cursor.HAND);
     }
 
     @Override
     public void onMouseExited() {
-        setFill(Color.PURPLE);
+        setFill(Color.RED);
         setCursor(Cursor.DEFAULT);
     }
 }
